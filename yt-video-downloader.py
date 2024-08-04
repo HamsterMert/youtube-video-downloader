@@ -23,7 +23,6 @@ def mp3video():
     
     ys = yt.streams.get_audio_only()
     
-    # Download the audio file to the specified directory
     ys.download(output_path=output_directory, filename=f"{yt.title}.mp3")
     print('Video Başarıyla İndirildi.')
 
